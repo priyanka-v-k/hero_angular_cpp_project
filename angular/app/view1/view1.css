@@ -1,0 +1,48 @@
+/*
+flip card
+*/
+.card-flip > div {
+    backface-visibility: hidden;
+    transition: transform 300ms;
+    transition-timing-function: linear;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    display: flex;
+  }
+  
+  .card-front {
+    transform: rotateY(0deg);
+  }
+  
+  .card-back {
+    transform: rotateY(180deg);
+    position: absolute;
+    top: 0;
+  }
+  
+  .card-flip:hover .card-front {
+    transform: rotateY(-180deg);
+  }
+    
+  .card-flip:hover .card-back {
+    transform: rotateY(0deg);
+  }
+
+  #scrollspy-example {
+    height: 615px;
+    overflow-y: scroll;
+    position: relative;
+  }
+  #scrollspyHeroes > .nav-pills .nav-link{
+    color:#765190;
+  }
+  #scrollspyHeroes > .nav-pills .nav-link:focus,#scrollspyHeroes > .nav-pills .nav-link:hover{
+    color:#765190;
+    text-decoration:underline !important;
+  }
+  #scrollspyHeroes > .nav-pills .nav-link.active{
+    background-image: linear-gradient(to right,#0282f9, #ec1d24);
+    color:white !important;
+    text-decoration: none !important;
+  }

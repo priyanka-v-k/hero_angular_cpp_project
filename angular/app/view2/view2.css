@@ -1,0 +1,17 @@
+#scrollspyHeroes > .nav-pills .nav-link{
+    color:#765190;
+  }
+  #scrollspyHeroes > .nav-pills .nav-link:focus,#scrollspyHeroes > .nav-pills .nav-link:hover{
+    color:#765190;
+    text-decoration:underline !important;
+  }
+  #scrollspyHeroes > .nav-pills .nav-link.active{
+    background-image: linear-gradient(to right,#0282f9, #ec1d24);
+    color:white !important;
+    text-decoration: none !important;
+  }
+  #scrollspy-example {
+    height: 300px;
+    overflow-y: scroll;
+    position: relative;
+  }

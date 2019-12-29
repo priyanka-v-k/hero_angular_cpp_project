@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" ng-app="myApp" scroll-spy="heroesMarvelResponse" class="no-js"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>My AngularJS App</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="lib/html5-boilerplate/dist/css/normalize.css">
+  <link rel="stylesheet" href="lib/html5-boilerplate/dist/css/main.css">
+  <link rel="stylesheet" href="app.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body ng-controller="appCtrl">
+  <div class="menu1">
+      <nav class = "navbar navbar-expand-lg">
+   
+          <a id="mainHeader" class = "navbar-brand" href = "#"><span><i class="fa fa-bolt" aria-hidden="true"></i>&nbsp;</span>Hero Up</a>
+             <button type = "button" class = "custom-toggler navbar-toggler" 
+                data-toggle = "collapse" data-target = "#mainPageCollapse">
+                <span class="navbar-toggler-icon"></span>
+             </button>
+           
+             
+         
+          
+          <div id="mainPageCollapse" class = "collapse navbar-collapse">
+         
+             <ul class = "nav navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class = "nav-item active"><a class="nav-link" href = "#!/view1">Home<span class="sr-only">(current)</span></a></li>
+                <li class = "nav-item"><a class="nav-link" href = "#!/view2">Dashboard</a></li>
+             </ul>
+             <form id="mainPageForm" class="form-inline  my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" ng-model="searchTerm" placeholder="Search your hero" aria-label="Search">
+                <button id="searchButton" class="btn btn-default my-2 my-sm-0" type="submit"><span ng-click="searchYourHero();"><i class="fa fa-search" aria-hidden="true"></i></button>
+              </form>
+          </div>
+       </nav>
+  </div>
+  <!--ul>
+    <li><a href="#!/view1">view1</a></li>
+    <li><a href="#!/view2">view2</a></li>
+  </ul-->
+
+  <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+  <![endif]-->
+
+  <div ng-view></div>
+
+
+
+
+
+      <!--div class="alert alert-danger alert-dismissible">
+        <a href="javascript:void()" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+        <strong>Error!</strong> Please try after sometime.
+      </!--div-->
+
+
+
+
+  <!--div>AngularJS seed app: v<span app-version></span></div-->
+
+  <!-- In production use:
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
+  -->
+  <script src="lib/angular/angular.js"></script>
+  <script src="lib/angular-route/angular-route.js"></script>
+  <script src="core/version/version.js"></script>
+  <script src="core/version/version-directive.js"></script>
+  <script src="core/version/interpolate-filter.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" ></script>
+  <script src='https://cdn.plot.ly/plotly-latest.min.js'></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.5.0/ui-bootstrap-tpls.js"></script>
+  <script src="lib/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
+  <script src="app.js"></script>
+  <script src="view1/view1.js"></script>
+  <script src="view2/view2.js"></script>
+</body>
+</html>

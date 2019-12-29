@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="stylesheet" href="view1/view1.css">
+<!--script>
+  $('#scrollspy-example').scrollspy({target: ".navbar"});
+</!--script-->
+<div class="hero">
+    <div class="diagonal-hero-bg">
+        <div class="stars">
+            <div class="small"></div>
+            <div class="medium"></div>
+            <div class="big"></div>
+            <div class="row" >
+                <div class="col-md-4"></div>
+                <div class="col-md-3" id="imgText">
+                    <br>
+                    <br>
+                    <br>
+                   
+                   
+                    <span>Find Your Inner Hero!</span>
+                    <br>
+                    <br>
+                    <br>
+                   
+                   
+                </div>
+                <div class="col-md-4"></div>
+            </div>
+        </div>
+        
+    </div>
+</div>
+
+
+
+<div class="row">
+    <div class="col-sm-4 col-lg-3">
+      <nav id="scrollspyHeroes" class="navbar navbar-light bg-light flex-column mt-4">
+        <nav class="nav nav-pills flex-column">
+          <a class="nav-link active" onclick="return false;" id="marvel" href="#item-1">Marvel</a>
+          <nav ng-repeat="hero in heroesMarvelResponse" class="nav nav-pills flex-column">
+            <a class="nav-link ml-3 my-1" onclick="return false;" href="#{{hero.data.id}}">{{hero.data.name}}</a>
+          </nav>
+          <a class="nav-link active" onclick="return false;" id="dc" href="#item-2">DC</a>
+          <nav ng-repeat="hero in heroesDCResponse" class="nav nav-pills flex-column">
+            <a class="nav-link ml-3 my-1" onclick="return false;" href="#{{hero.data.id}}">{{hero.data.name}}</a>
+          </nav>
+        </nav>
+      </nav>
+    </div>
+  
+    <div class="col-sm-8 col-lg-9">
+      <div data-spy="scroll" id="scrollspy-example" class="z-depth-1 mt-4" data-target="#scrollspyHeroes"
+        data-offset="10">
+        <h4 id="item-1">Marvel</h4>
+        <p> Here you go Marvel Maniacs!</p>
+        <div ng-repeat="hero in heroesMarvelResponse">
+        <h5 id="{{hero.data.id}}">{{hero.data.name}}</h5>
+        <div class="card" style="width: 18rem;">
+          
+          <div class="card card-flip h-100">
+            <div class="card-front text-white bg-dark">
+                <img class="card-img-top" src="{{hero.data.image.url}}" alt="Card image cap">
+            </div>
+            <div class="card-back bg-white">
+                <div class="card-body">
+                    <span style="font-style:italic;"><strong>Power Stats</strong></span>
+                  <table style="width:100%">
+                    <tr>
+                      <th>Intelligence</th>
+                      <td>{{hero.data.powerstats.intelligence}}</td>
+                    </tr>
+                    <tr>
+                      <th>Strength</th>
+                      <td>{{hero.data.powerstats.strength}}</td>
+                    </tr>
+                    <tr>
+                      <th>Speed</th>
+                      <td>{{hero.data.powerstats.speed}}</td>
+                    </tr>
+                    <tr>
+                      <th>Durability</th>
+                      <td>{{hero.data.powerstats.durability}}</td>
+                    </tr>
+                    <tr>
+                      <th>Power</th>
+                      <td>{{hero.data.powerstats.power}}</td>
+                    </tr>
+                    <tr>
+                      <th>Combat</th>
+                      <td>{{hero.data.powerstats.combat}}</td>
+                    </tr>
+                  </table>
+                  <br>
+                  <span style="font-style:italic;"><strong>Appearance</strong></span>
+                  <table style="width:100%">
+                    <tr>
+                      <th>Height</th>
+                      <td>{{hero.data.appearance.height[0]}}</td>
+                    </tr>
+                    <tr>
+                      <th>Weight</th>
+                      <td>{{hero.data.appearance.weight[0]}}</td>
+                    </tr>
+                    <tr>
+                      <th>Eye color</th>
+                      <td>{{hero.data.appearance["eye-color"]}}</td>
+                    </tr>
+                    <tr>
+                      <th>Hair color</th>
+                      <td>{{hero.data.appearance["hair-color"]}}</td>
+                    </tr>
+                  </table>
+                </div>
+            </div>
+        </div>
+
+
+          <div class="card-body">
+            <p class="card-text" style="font-style: italic;color:rgb(92, 92, 92)">"{{hero.data.biography["full-name"]}},<br>{{hero.data.work.occupation}}<br>{{hero.data.work.base}}"</p>
+          </div>
+        </div>
+      </div>
+
+
+        
+        
+        <h4 id="item-2">DC</h4>
+        <p> Here you go DC Heads!</p>
+        <div ng-repeat="hero in heroesDCResponse">
+            <h5 id="{{hero.data.id}}">{{hero.data.name}}</h5>
+            <div class="card" style="width: 18rem;">
+              
+              <div class="card card-flip h-100">
+                <div class="card-front text-white bg-dark">
+                    <img class="card-img-top" src="{{hero.data.image.url}}" alt="Card image cap">
+                </div>
+                <div class="card-back bg-white">
+                    <div class="card-body">
+                        <span style="font-style:italic;"><strong>Power Stats</strong></span>
+                      <table style="width:100%">
+                        <tr>
+                          <th>Intelligence</th>
+                          <td>{{hero.data.powerstats.intelligence}}</td>
+                        </tr>
+                        <tr>
+                          <th>Strength</th>
+                          <td>{{hero.data.powerstats.strength}}</td>
+                        </tr>
+                        <tr>
+                          <th>Speed</th>
+                          <td>{{hero.data.powerstats.speed}}</td>
+                        </tr>
+                        <tr>
+                          <th>Durability</th>
+                          <td>{{hero.data.powerstats.durability}}</td>
+                        </tr>
+                        <tr>
+                          <th>Power</th>
+                          <td>{{hero.data.powerstats.power}}</td>
+                        </tr>
+                        <tr>
+                          <th>Combat</th>
+                          <td>{{hero.data.powerstats.combat}}</td>
+                        </tr>
+                      </table>
+                      <br>
+                      <span style="font-style:italic;"><strong>Appearance</strong></span>
+                      <table style="width:100%">
+                        <tr>
+                          <th>Height</th>
+                          <td>{{hero.data.appearance.height[0]}}</td>
+                        </tr>
+                        <tr>
+                          <th>Weight</th>
+                          <td>{{hero.data.appearance.weight[0]}}</td>
+                        </tr>
+                        <tr>
+                          <th>Eye color</th>
+                          <td>{{hero.data.appearance["eye-color"]}}</td>
+                        </tr>
+                        <tr>
+                          <th>Hair color</th>
+                          <td>{{hero.data.appearance["hair-color"]}}</td>
+                        </tr>
+                      </table>
+                    </div>
+                </div>
+            </div>
+    
+    
+              <div class="card-body">
+                <p class="card-text" style="font-style: italic;color:darkgray">"{{hero.data.biography["full-name"]}},<br>{{hero.data.work.occupation}}<br>{{hero.data.work.base}}"</p>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+</html>

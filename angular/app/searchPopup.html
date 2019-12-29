@@ -1,0 +1,90 @@
+<div class="container">
+    <div ng-if="dataAvailable" class="row">
+        <div class="col-md-10 top40"><h5 id="{{hero.data.id}}">{{hero.data.name}}</h5></div>
+        <div class="col-md-2 top40">
+            <a href="javascript:void();" class="close float-right" ng-click="ok()" aria-label="close">&times;</a>
+        </div>
+    </div>
+    <div ng-if="dataNotAvailable" class="row">
+        <div class="col-md-10 top5"></div>
+        <div class="col-md-2 top5">
+            <a href="javascript:void();" class="close float-right" ng-click="ok()" aria-label="close">&times;</a>
+        </div>
+    </div>
+    <hr>
+    <br>
+    <div ng-if="dataNotAvailable" class="row textCenter">
+        <br>
+        <div>
+            <h3>Data Not Available</h3>
+        </div>
+        <br>
+        <br>
+        <br>
+    </div>
+
+    <div ng-if="dataAvailable" class="card" style="width: 18rem;margin-bottom:15px;">
+    
+    <div class="card card-flip h-100">
+        <div class="card-front text-white bg-dark">
+            <img class="card-img-top" src="{{hero.data.image.url}}" alt="Card image cap">
+        </div>
+        <div class="card-back bg-white">
+            <div class="card-body">
+                <span style="font-style:italic;"><strong>Power Stats</strong></span>
+            <table style="width:100%">
+                <tr>
+                <th>Intelligence</th>
+                <td>{{hero.data.powerstats.intelligence}}</td>
+                </tr>
+                <tr>
+                <th>Strength</th>
+                <td>{{hero.data.powerstats.strength}}</td>
+                </tr>
+                <tr>
+                <th>Speed</th>
+                <td>{{hero.data.powerstats.speed}}</td>
+                </tr>
+                <tr>
+                <th>Durability</th>
+                <td>{{hero.data.powerstats.durability}}</td>
+                </tr>
+                <tr>
+                <th>Power</th>
+                <td>{{hero.data.powerstats.power}}</td>
+                </tr>
+                <tr>
+                <th>Combat</th>
+                <td>{{hero.data.powerstats.combat}}</td>
+                </tr>
+            </table>
+            <br>
+            <span style="font-style:italic;"><strong>Appearance</strong></span>
+            <table style="width:100%">
+                <tr>
+                <th>Height</th>
+                <td>{{hero.data.appearance.height[0]}}</td>
+                </tr>
+                <tr>
+                <th>Weight</th>
+                <td>{{hero.data.appearance.weight[0]}}</td>
+                </tr>
+                <tr>
+                <th>Eye color</th>
+                <td>{{hero.data.appearance["eye-color"]}}</td>
+                </tr>
+                <tr>
+                <th>Hair color</th>
+                <td>{{hero.data.appearance["hair-color"]}}</td>
+                </tr>
+            </table>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="card-body">
+        <p class="card-text" style="font-style: italic;color:rgb(92, 92, 92)">"{{hero.data.biography["full-name"]}},<br>{{hero.data.work.occupation}}<br>{{hero.data.work.base}}"</p>
+    </div>
+    </div>
+   </div>        

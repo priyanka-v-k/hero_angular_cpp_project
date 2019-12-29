@@ -1,0 +1,109 @@
+{
+  "_from": "angular-plotly.js",
+  "_id": "angular-plotly.js@1.4.2",
+  "_inBundle": false,
+  "_integrity": "sha512-Je3MNs/2WOHc+/I73tZxg64QI2oeicWlYLoV8kEOxDnmmabskZyZjxdSkGZaxg14tdGiMoH1mru+D9mGZTQkiQ==",
+  "_location": "/angular-plotly.js",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "angular-plotly.js",
+    "name": "angular-plotly.js",
+    "escapedName": "angular-plotly.js",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/angular-plotly.js/-/angular-plotly.js-1.4.2.tgz",
+  "_shasum": "25a8d7adf3f0cbdf5e7d3bbe80d9909dc3cb7bc4",
+  "_spec": "angular-plotly.js",
+  "_where": "D:\\Hero up\\angular-seed",
+  "author": {
+    "name": "Plotly team",
+    "email": "contact@plot.ly",
+    "url": "http://plot.ly"
+  },
+  "bugs": {
+    "url": "https://github.com/plotly/angular-plotly.js/issues"
+  },
+  "bundleDependencies": false,
+  "contributors": [
+    {
+      "name": "André Farzat",
+      "email": "andrefarzat@gmail.com",
+      "url": "http://andrefarzat.com"
+    },
+    {
+      "name": "Ben",
+      "email": "ben@plot.ly",
+      "url": "http://plot.ly"
+    }
+  ],
+  "dependencies": {
+    "tslib": "^1.9.0"
+  },
+  "deprecated": false,
+  "description": "",
+  "devDependencies": {
+    "@angular-devkit/build-angular": "0.803.0",
+    "@angular/cli": "8.3.0",
+    "@angular/common": "8.2.3",
+    "@angular/compiler": "8.2.3",
+    "@angular/compiler-cli": "8.2.3",
+    "@angular/core": "8.2.3",
+    "@angular/platform-browser": "8.2.3",
+    "@angular/platform-browser-dynamic": "8.2.3",
+    "@angular/router": "8.2.3",
+    "@types/jasmine": "3.4.0",
+    "@types/jasminewd2": "2.0.6",
+    "@types/node": "12.7.2",
+    "codelyzer": "5.1.0",
+    "coveralls": "3.0.6",
+    "jasmine-core": "3.4.0",
+    "jasmine-spec-reporter": "4.2.1",
+    "karma": "4.2.0",
+    "karma-chrome-launcher": "3.1.0",
+    "karma-coverage-istanbul-reporter": "2.1.0",
+    "karma-jasmine": "2.0.1",
+    "karma-jasmine-html-reporter": "1.4.2",
+    "ng-packagr": "5.5.0",
+    "plotly.js": "1.49.4",
+    "rxjs": "^6.5.2",
+    "ts-node": "8.3.0",
+    "tsickle": "0.37.0",
+    "tslib": "1.10.0",
+    "tslint": "5.19.0",
+    "typescript": "3.5.3",
+    "zone.js": "~0.10.2"
+  },
+  "es2015": "fesm2015/angular-plotly.js.js",
+  "esm2015": "esm2015/angular-plotly.js.js",
+  "esm5": "esm5/angular-plotly.js.js",
+  "fesm2015": "fesm2015/angular-plotly.js.js",
+  "fesm5": "fesm5/angular-plotly.js.js",
+  "homepage": "https://github.com/plotly/angular-plotly.js",
+  "keywords": [
+    "angular",
+    "plotly",
+    "plotly.js",
+    "graph"
+  ],
+  "license": "MIT",
+  "main": "bundles/angular-plotly.js.umd.js",
+  "metadata": "angular-plotly.js.metadata.json",
+  "module": "fesm5/angular-plotly.js.js",
+  "name": "angular-plotly.js",
+  "peerDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/plotly/angular-plotly.js.git"
+  },
+  "sideEffects": false,
+  "typings": "angular-plotly.js.d.ts",
+  "version": "1.4.2"
+}
