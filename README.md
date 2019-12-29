@@ -61,7 +61,7 @@ Angular JS:
 Steps to run 
 1) Clone the project to any desired path
 2) Open node.js command prompt
-3) Change the path to where you have cloned the project and then further to 'angular-seed' and type the following command
+3) Change the path to where you have cloned the project and then further to 'angular' and type the following command
 
 npm install
 
