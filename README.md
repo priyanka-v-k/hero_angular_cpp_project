@@ -75,6 +75,8 @@ The above command installs the needed dependencies, and creates a folder called 
  "http://localhost:8000"
 
  6) To edit the app, you could use Visual Studio Code. It also has a built in node terminal.
+ 
+ [Note:Run chrome as "chrome.exe --user-data-dir="C:/Chrome dev session" --disable-web-security" from command prompt to avoid CORS issue"]
 
 
  
